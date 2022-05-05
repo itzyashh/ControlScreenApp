@@ -1,16 +1,35 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
-import CustomButton from '../CustomButton/CustomButton'
+import CustomButton from '../CustomButton'
+import SectionText from '../SectionText'
 
 const ContentSection = (props) => {
+
+  const allOff = () => {
+    alert('All Off pressed')
+  }
+  const bright = () => {
+    alert('Bright pressed')
+  }
+
+
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>{props.title}</Text>
-      <View style={styles.test}>
-        <CustomButton />
-        <CustomButton />
-        <CustomButton />
-
+      <SectionText title={props.title}/>
+      <View style={[
+        styles.test, {
+      flexDirection: "row"
+    }]}>
+        <CustomButton name="All Off" onPress={allOff}/>
+        <CustomButton name="Bright"  onPress={bright}/>
+        
+      </View>
+      <View style={{
+      flexDirection: "row"
+      }}>
+        <CustomButton name="All Off" onPress={allOff}/>
+        <CustomButton name="Bright"  onPress={bright}/>
+        
       </View>
     </View>
   )
@@ -19,12 +38,8 @@ const styles = StyleSheet.create({
   test:{},
   container: {
     marginTop: 18,
-    paddingHorizontal: 14,
+    marginHorizontal: 14,
   },
-  text: {
-    fontSize: 14,
-    fontWeight: 'bold',
-    color: 'grey'
-  },
+  
 })
 export default ContentSection

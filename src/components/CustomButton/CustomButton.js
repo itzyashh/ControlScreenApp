@@ -2,10 +2,12 @@ import { View, Text, Pressable,StyleSheet } from 'react-native'
 import React from 'react'
 import Icon from '../../../assests/icons/rocket.svg'
 
-const CustomButton = () => {
+const CustomButton = (props) => {
     return (
-        <Pressable style={styles.primaryButton}>
-            <Text style={styles.primaryText}>Dummy</Text>
+        <Pressable onPress={props.onPress}
+        style={styles.primaryButton}>
+            
+            <Text style={styles.primaryText}>{props.name}</Text>
         </Pressable>
 
     )
@@ -13,12 +15,12 @@ const CustomButton = () => {
 
 const styles = StyleSheet.create({
     primaryButton:{
-        width: '35%',
+        width: '45%',
         padding: 22,
         backgroundColor:'white',
         alignItems: 'center',
-        
-         marginVertical: 5,
+         marginHorizontal:5,
+         marginVertical:5
 
     },
     primaryText:{
@@ -26,5 +28,9 @@ const styles = StyleSheet.create({
         
     }
 })
+
+CustomButton.defaultProps = {
+    name: 'Button name'
+}
 
 export default CustomButton
