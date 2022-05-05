@@ -12,8 +12,8 @@ import {
   StyleSheet,
 } from 'react-native';
 import CustomHeader from './src/components/CustomHeader';
-import GroupControlSection from './src/components/GroupControlSection';
-import SceneSection from './src/components/SceneSection';
+import GroupControlSection from './src/section/GroupControlSection';
+import SceneSection from './src/section/SceneSection';
 
 
 

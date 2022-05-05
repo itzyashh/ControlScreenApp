@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
-import CustomButton from '../CustomButton'
-import SectionText from '../SectionText'
+import CustomButton from '../../components/CustomButton'
+import SectionText from '../../components/SectionText'
 
 const ContentSection = (props) => {
 
