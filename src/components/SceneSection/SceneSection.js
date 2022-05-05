@@ -9,12 +9,14 @@ const ContentSection = (props) => {
       <View style={styles.test}>
         <CustomButton />
         <CustomButton />
+        <CustomButton />
 
       </View>
     </View>
   )
 }
 const styles = StyleSheet.create({
+  test:{},
   container: {
     marginTop: 18,
     paddingHorizontal: 14,
@@ -24,6 +26,5 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'grey'
   },
-  test:{}
 })
 export default ContentSection

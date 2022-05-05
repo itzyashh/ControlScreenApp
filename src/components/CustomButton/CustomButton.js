@@ -13,17 +13,17 @@ const CustomButton = () => {
 
 const styles = StyleSheet.create({
     primaryButton:{
-        width: '50%',
+        width: '35%',
         padding: 22,
         backgroundColor:'white',
         alignItems: 'center',
-
+        
          marginVertical: 5,
 
     },
     primaryText:{
         fontWeight: '400',
-
+        
     }
 })
 
