@@ -24,6 +24,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'grey'
   },
-  text:{flex:1}
+  test:{flex:1}
 })
 export default ContentSection
