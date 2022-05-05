@@ -6,8 +6,11 @@ const ContentSection = (props) => {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>{props.title}</Text>
-      <CustomButton />
-      <CustomButton />
+      <View style={styles.test}>
+        <CustomButton />
+        <CustomButton />
+
+      </View>
     </View>
   )
 }
@@ -20,6 +23,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: 'bold',
     color: 'grey'
-  }
+  },
+  text:{flex:1}
 })
 export default ContentSection
