@@ -12,6 +12,7 @@ import {
   StyleSheet,
 } from 'react-native';
 import CustomHeader from './src/components/CustomHeader';
+import ControlSection from './src/section/ControlSection';
 import GroupControlSection from './src/section/GroupControlSection';
 import SceneSection from './src/section/SceneSection';
 
@@ -26,7 +27,7 @@ const App= () => {
      <CustomHeader heading="Shade Control" subtitle="Living Room"/>
      <SceneSection title="SCENES"/>
      <GroupControlSection title="GROUP CONTROL"/>
-     
+     <ControlSection title="CONTROLS"/>
     </SafeAreaView>
   );
 };
