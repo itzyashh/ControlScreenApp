@@ -2,6 +2,7 @@ import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
 import SectionText from '../../components/SectionText'
 import CustomButton from '../../components/CustomButton'
+import DropdownComponent from '../../components/DropdownComponent'
 
 const ControlSection = (props) => {
 
@@ -25,16 +26,19 @@ const ControlSection = (props) => {
 
     <View style={styles.container}>
       <SectionText title={props.title} />
-    </View>
-    <View style={{flexDirection:'row'}}>
+    </View><View style={{ marginTop: 10 }}>
 
-    <CustomButton name='Open' type='secondaryButton' onPress={OpenButton}/>
-    <CustomButton name='Pause' type='secondaryButton' onPress={Pause}/>
-    <CustomButton name='Close' type='secondaryButton' onPress={CloseButton}/>
+      <DropdownComponent />
     </View>
-    <View style={{flexDirection:'row'}}>
-      <CustomButton name="Blackout" onPress={Blackout}/>
-      <CustomButton name="Flip+" onPress={Flip}/>
+    <View style={{ flexDirection: 'row' }}>
+
+      <CustomButton name='Open' type='secondaryButton' onPress={OpenButton} />
+      <CustomButton name='Pause' type='secondaryButton' onPress={Pause} />
+      <CustomButton name='Close' type='secondaryButton' onPress={CloseButton} />
+    </View>
+    <View style={{ flexDirection: 'row' }}>
+      <CustomButton name="Blackout" onPress={Blackout} />
+      <CustomButton name="Flip+" onPress={Flip} />
     </View>
   </>
   )

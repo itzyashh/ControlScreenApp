@@ -13,6 +13,7 @@ import {
 import ShadeControl from './src/screens/ShadeControl';
 import StackNavigator from './StackNavigator';
 import { NavigationContainer } from '@react-navigation/native';
+// import MyDrawer from './MyDrawer';
 
 
 
@@ -22,7 +23,7 @@ const App= () => {
 
   return (
     <NavigationContainer>
-
+    {/* <MyDrawer /> */}
     <StackNavigator />
     </NavigationContainer>
   );
