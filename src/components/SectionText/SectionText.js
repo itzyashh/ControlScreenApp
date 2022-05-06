@@ -10,7 +10,7 @@ const SectionText = (props) => {
 
 const styles = StyleSheet.create({
     text: {
-        fontSize: 14,
+        fontSize: 13,
         fontWeight: 'bold',
         color: 'grey'
       },

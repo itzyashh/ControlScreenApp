@@ -26,7 +26,7 @@ const App= () => {
     <SafeAreaView >
      <CustomHeader heading="Shade Control" subtitle="Living Room"/>
      <SceneSection title="SCENES"/>
-     <GroupControlSection title="GROUP CONTROL"/>
+     <GroupControlSection title="GROUP CONTROLS"/>
      <ControlSection title="CONTROLS"/>
     </SafeAreaView>
   );

@@ -10,14 +10,14 @@ const GroupControlSection = (props) => {
     const MoreClosePressed =() => {
         alert('More Close Pressed')
     }
-  return (
+  return (<>
     <View style={styles.container}>
       <SectionText title={props.title}/>
+      </View>
       <View style={{flexDirection:'row'}}>
           <CustomButton name='More Open' onPress={MoreOpenPressed}/>
           <CustomButton name='More Close' onPress={MoreClosePressed}/>
-      </View>
-    </View>
+    </View></>
   )
 }
 const styles = StyleSheet.create({

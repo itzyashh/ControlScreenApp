@@ -5,7 +5,10 @@ import Icon from '../../../assests/icons/rocket.svg'
 const CustomButton = (props) => {
     return (
         <Pressable onPress={props.onPress}
-        style={styles.primaryButton}>
+        style={[
+            styles.primaryButton,
+            styles[`primary${props.type}`]
+        ]}>
             
             <Text style={styles.primaryText}>{props.name}</Text>
         </Pressable>
@@ -15,13 +18,21 @@ const CustomButton = (props) => {
 
 const styles = StyleSheet.create({
     primaryButton:{
-        width: '45%',
+        width: '48%',
         padding: 22,
         backgroundColor:'white',
         alignItems: 'center',
          marginHorizontal:5,
          marginVertical:5
 
+    },
+    primarysecondaryButton: {
+        width: '31%',
+        padding: 22,
+        backgroundColor:'white',
+        alignItems: 'center',   
+        marginHorizontal:5,
+        marginVertical:5
     },
     primaryText:{
         fontWeight: '400',
@@ -30,7 +41,8 @@ const styles = StyleSheet.create({
 })
 
 CustomButton.defaultProps = {
-    name: 'Button name'
+    name: 'Button name',
+    type:'primaryButton'
 }
 
 export default CustomButton

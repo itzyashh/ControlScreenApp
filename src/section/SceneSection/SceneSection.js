@@ -13,9 +13,10 @@ const ContentSection = (props) => {
   }
 
 
-  return (
+  return (<>
     <View style={styles.container}>
       <SectionText title={props.title}/>
+      </View>
       <View style={[
         styles.test, {
       flexDirection: "row"
@@ -30,16 +31,16 @@ const ContentSection = (props) => {
         <CustomButton name="All Off" onPress={allOff}/>
         <CustomButton name="Bright"  onPress={bright}/>
         
-      </View>
-    </View>
+      
+    </View></>
   )
 }
 const styles = StyleSheet.create({
-  test:{},
+  test: {},
   container: {
     marginTop: 18,
-    marginHorizontal: 14,
+    paddingHorizontal: 14,
   },
-  
+
 })
 export default ContentSection
