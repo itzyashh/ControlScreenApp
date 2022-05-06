@@ -8,13 +8,11 @@
 
 import React from 'react';
 import {
-  SafeAreaView,
   StyleSheet,
 } from 'react-native';
-import CustomHeader from './src/components/CustomHeader';
-import ControlSection from './src/section/ControlSection';
-import GroupControlSection from './src/section/GroupControlSection';
-import SceneSection from './src/section/SceneSection';
+import ShadeControl from './src/screens/ShadeControl';
+import StackNavigator from './StackNavigator';
+import { NavigationContainer } from '@react-navigation/native';
 
 
 
@@ -23,12 +21,10 @@ const App= () => {
   
 
   return (
-    <SafeAreaView >
-     <CustomHeader heading="Shade Control" subtitle="Living Room"/>
-     <SceneSection title="SCENES"/>
-     <GroupControlSection title="GROUP CONTROLS"/>
-     <ControlSection title="CONTROLS"/>
-    </SafeAreaView>
+    <NavigationContainer>
+
+    <StackNavigator />
+    </NavigationContainer>
   );
 };
 
